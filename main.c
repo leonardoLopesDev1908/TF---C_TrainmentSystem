@@ -10,10 +10,10 @@
 #define MAX_QUESTIONS 400
 
 void load_questions(question_t* q, FILE* file);
-void loop_course(question_t* questions);
-void remove_question(question_t* questions, int i);
-void selected_questions(question_t* all_questions, int size_1 
-    question_t* selected_questions, int size_2);
+void loop_course(question_t* questions, unsigned int size);
+void remove_question(question_t* questions, int i, int size);
+void select_questions(question_t* all_questions, 
+        question_t* selected_questions, int size);
 
 int main()
 {
@@ -29,8 +29,8 @@ int main()
     load_questions(questions, fptr);
 
     question_t* selected_questions = (question_t*) malloc(SELECTED_QUESTIONS_SIZE * sizeof(question_t));
-    select_questions(&selected_question, SELECTED_QUESTIONS_SIZE,
-            &questions, MAX_QUESTIONS);
+    
+    select_questions(questions, selected_questions, SELECTED_QUESTIONS_SIZE);
 
     loop_course(selected_questions, SELECTED_QUESTIONS_SIZE);
 
@@ -84,32 +84,44 @@ void load_questions(question_t* q_array, FILE* file)
     }
 }
 
-void selected_questions(question_t* all_questions, int size_1 
-    question_t* selected_questions, int size_2)
+void select_questions(question_t* all_questions, 
+    question_t* selected_questions, int size)
 {
     srand(time(NULL));
-    for(int i = 0; i < size_1, i++)
+    int k, l;
+    for(int i = 0; i < size; i += 2)
     {
-    
+        k = rand() % size;
+        
+        do {
+            l = rand() % size;
+        }while(l == k);
+
+        selected_questions[i] = all_questions[k];
+        if(i + 1 < size)
+            selected_questions[i+1] = all_questions[l];
     }
 }
 
-void loop_course(question_t* questions, size_t count)
+void loop_course(question_t* questions, unsigned int count)
 {
     int i = 0;
+    int errors = 0;
     while(count > 0)
     {
-        if(i == count - 1) i = 0;
+        if(i >= count) i = 0;
 
         int user_answer = 0;
 
         printf("%d: \n%s\n", questions[i].id, questions[i].description);
-        scanf("%d", &user_answer);
+        printf("1 para Verdadeiro\n0 para Falso: ");
+        scanf("%d", &user_answer);  
 
         if(user_answer != questions[i].ans)
         {
             printf("%s\n", questions[i].incorrect_msg);
             ++i;
+            errors++;
         }
         else
         {
@@ -117,13 +129,17 @@ void loop_course(question_t* questions, size_t count)
             printf("%s\n", questions[i].correct_msg);
             remove_question(questions, i, count);
         }
+        printf("\n");
     }
-
     printf("Todas questoes respondidas\n");
+    printf("Seu desempenho: %d/%d\n %.2f%\n", 
+            count - errors, count, (errors/count)); 
 }
 
-void remove_question(question_t* questions, int index, int size)
+void remove_question(question_t* questions, int i, int size)
 {
-    for(i; i < count - 1; i++)
+    for(i; i < size - 1; i++)
+    {
         questions[i] = questions[i+1];
+    }
 }
