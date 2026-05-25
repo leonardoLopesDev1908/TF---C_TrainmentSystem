@@ -1,0 +1,29 @@
+26
+Bibliotecas estaticas sao incorporadas ao executavel.
+1
+Correto! O codigo da biblioteca e incluido no binario final.
+Incorreto! Bibliotecas estaticas sao incorporadas ao executavel.
+
+27
+Bibliotecas dinamicas podem ser compartilhadas entre programas.
+1
+Correto! Bibliotecas dinamicas podem ser reutilizadas em memoria.
+Incorreto! Bibliotecas dinamicas podem ser compartilhadas.
+
+28
+Arquivos .so sao comuns em bibliotecas dinamicas no Linux.
+1
+Correto! .so representa shared objects.
+Incorreto! Bibliotecas compartilhadas usam .so.
+
+29
+Bibliotecas estaticas normalmente possuem extensao .a no Linux.
+1
+Correto! Bibliotecas estaticas usam extensao .a.
+Incorreto! .a e a extensao tipica de bibliotecas estaticas.
+
+30
+Bibliotecas dinamicas aumentam obrigatoriamente o tamanho do executavel final.
+0
+Correto! O codigo pode ser carregado externamente.
+Incorreto! Bibliotecas dinamicas nao precisam ser incorporadas ao executavel.

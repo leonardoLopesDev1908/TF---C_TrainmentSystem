@@ -1,0 +1,29 @@
+31
+O operador & pode ser usado para operacao AND bit a bit.
+1
+Correto! & realiza AND entre bits.
+Incorreto! & e usado para operacao AND bit a bit.
+
+32
+O operador | realiza OR bit a bit.
+1
+Correto! | executa OR entre bits.
+Incorreto! | e usado para OR bit a bit.
+
+33
+O operador << desloca bits para a esquerda.
+1
+Correto! << move bits para a esquerda.
+Incorreto! << realiza deslocamento a esquerda.
+
+34
+O operador ~ inverte os bits de um numero.
+1
+Correto! ~ realiza complemento bit a bit.
+Incorreto! ~ inverte os bits.
+
+35
+Manipulacao de bits nao pode ser usada para otimizacao.
+0
+Correto! Bitwise pode ajudar em otimizacoes.
+Incorreto! Operacoes bit a bit sao usadas em otimizacao.

@@ -1,0 +1,29 @@
+36
+Ponteiros armazenam enderecos de memoria.
+1
+Correto! Ponteiros guardam enderecos.
+Incorreto! Ponteiros armazenam enderecos de memoria.
+
+37
+O operador * pode ser usado para dereferenciar ponteiros.
+1
+Correto! * acessa o valor apontado.
+Incorreto! * e usado para acessar o conteudo apontado.
+
+38
+O operador & retorna o endereco de uma variavel.
+1
+Correto! & obtem o endereco na memoria.
+Incorreto! & e usado para obter enderecos.
+
+39
+Um ponteiro NULL aponta para um endereco valido de dados.
+0
+Correto! NULL representa ausencia de endereco valido.
+Incorreto! NULL nao aponta para dados validos.
+
+40
+Ponteiros podem apontar para funcoes.
+1
+Correto! Funcoes tambem possuem enderecos.
+Incorreto! Ponteiros podem apontar para funcoes.

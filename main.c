@@ -9,16 +9,14 @@
 #define SELECTED_QUESTIONS_SIZE 20
 #define MAX_QUESTIONS 400
 
-void load_questions(question_t* q, FILE* file);
-void loop_course(question_t* questions, unsigned int size);
+void load_questions(question_t* q);
+void loop_course(question_t* questions, unsigned int size, char* user);
 void remove_question(question_t* questions, int i, int size);
 void select_questions(question_t* all_questions, 
         question_t* selected_questions, int size);
 
-//Ler um txt para cada modulo
-//Controle de questões repetidas
 //Usar um txt para registrar:
-//Data do questionario, nome do usuario e desempenho
+//  Data do questionario, nome do usuario e desempenho
 
 int main()
 {
@@ -29,49 +27,58 @@ int main()
 
     question_t* questions = (question_t*) malloc(MAX_QUESTIONS * sizeof(question_t));
 
-    FILE* fptr = fopen("questions_db.txt", "r");
-
-    load_questions(questions, fptr);
+    load_questions(questions);
     question_t* selected_questions = (question_t*) malloc(SELECTED_QUESTIONS_SIZE * sizeof(question_t));
     select_questions(questions, selected_questions, SELECTED_QUESTIONS_SIZE);
 
-    loop_course(selected_questions, SELECTED_QUESTIONS_SIZE);
+    loop_course(selected_questions, SELECTED_QUESTIONS_SIZE, user);
 
     return 0;
 }
 
-void load_questions(question_t* q_array, FILE* file)
+void load_questions(question_t* q_array)
 {
-    if(file == NULL)
-    {
-        printf("Arquivo indisponivel.\n");
-        return;
-    }
-
     int count = 0;
-    char line[512];
-
-    while(fgets(line, sizeof(line), file) != NULL)
+    for(int i = 0; i < 10; i++)
     {
-        if(strcmp(line, "\n") == 0)
-            continue;
+        char path[100];
 
-        question_t q;
+        snprintf(path, sizeof(path), "questions/questions_db%d.txt", i);
 
-        q.id = atoi(line);
+        FILE* file = fopen(path, "r");
+    
+        if(file == NULL)
+        {
+            printf("Arquivo indisponivel.\n");
+            return;
+        }
+    
+        char line[512];
+    
+        while(fgets(line, sizeof(line), file) != NULL)
+        {
+            if(strcmp(line, "\n") == 0)
+                continue;
+    
+            question_t q;
+    
+            q.id = atoi(line);
+    
+            fgets(q.description, sizeof(q.description), file);
+            q.description[strcspn(q.description, "\n")] = '\0';
+    
+            fgets(line, sizeof(line), file);
+            q.ans = atoi(line);
+    
+            fgets(q.correct_msg, sizeof(q.correct_msg), file);
+            q.correct_msg[strcspn(q.correct_msg, "\n")] = '\0';
+    
+            fgets(q.incorrect_msg, sizeof(q.incorrect_msg), file);
+            q.incorrect_msg[strcspn(q.incorrect_msg, "\n")] = '\0';
+            q_array[count++] = q;
+        }
 
-        fgets(q.description, sizeof(q.description), file);
-        q.description[strcspn(q.description, "\n")] = '\0';
-
-        fgets(line, sizeof(line), file);
-        q.ans = atoi(line);
-
-        fgets(q.correct_msg, sizeof(q.correct_msg), file);
-        q.correct_msg[strcspn(q.correct_msg, "\n")] = '\0';
-
-        fgets(q.incorrect_msg, sizeof(q.incorrect_msg), file);
-        q.incorrect_msg[strcspn(q.incorrect_msg, "\n")] = '\0';
-        q_array[count++] = q;
+        fclose(file);
     }
 }
 
@@ -79,22 +86,25 @@ void select_questions(question_t* all_questions,
     question_t* selected_questions, int size)
 {
     srand(time(NULL));
+    int out_index = 0;
     int k, l;
-    for(int i = 0; i < size; i += 2)
-    {
-        k = rand() % 5;
-        
-        do {
-            l = rand() % size;
-        }while(l == k);
 
-        selected_questions[i] = all_questions[k];
-        if(i + 1 < size)
-            selected_questions[i+1] = all_questions[l];
+    for(int i = 0; i < 10; i++)
+    {
+        int base = i * 5;
+
+        k = rand() % 5;
+
+        do {
+            l = rand() % 5;
+        } while(l == k);
+
+        selected_questions[out_index++] = all_questions[base + k];
+        selected_questions[out_index++] = all_questions[base + l];
     }
 }
 
-void loop_course(question_t* questions, unsigned int count)
+void loop_course(question_t* questions, unsigned int count, char* user)
 {
     unsigned int total_questions = count;
     int i = 0;
@@ -126,8 +136,25 @@ void loop_course(question_t* questions, unsigned int count)
     printf("Todas questoes respondidas\n");
 
     double performance = ((double)(total_questions - errors) / total_questions) * 100;
-    printf("Seu desempenho: %d/%d\n %.2f%\n", 
+    printf("Seu desempenho: %d/%d\n%.2f%%\n", 
             total_questions - errors, total_questions, performance); 
+
+    FILE *file = fopen("log_sessions.txt", "a");
+    
+    if(file == NULL)
+    {
+        printf("Arquivo indisponivel\n");
+        return;
+    }
+
+    time_t currentTime;
+    time(&currentTime);
+
+    char* timeStr = ctime(&currentTime);
+    timeStr[strcspn(timeStr, "\n")] = '\0'; 
+    
+    fprintf(file, "%s (%s): %.2f\n", user, ctime(&currentTime), performance);
+    fclose(file);
 }
 
 void remove_question(question_t* questions, int i, int size)

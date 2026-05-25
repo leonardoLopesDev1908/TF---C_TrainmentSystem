@@ -1,0 +1,29 @@
+46
+Ponteiros para funcoes podem armazenar enderecos de funcoes.
+1
+Correto! Funcoes possuem enderecos de memoria.
+Incorreto! Ponteiros para funcoes armazenam enderecos de funcoes.
+
+47
+Ponteiros para funcoes permitem chamadas indiretas.
+1
+Correto! E possivel chamar funcoes atraves do ponteiro.
+Incorreto! Ponteiros para funcoes permitem execucao indireta.
+
+48
+Callbacks podem ser implementados usando ponteiros para funcoes.
+1
+Correto! Callbacks usam ponteiros para funcoes.
+Incorreto! Callbacks frequentemente usam ponteiros para funcoes.
+
+49
+Um ponteiro para funcao pode apontar para variaveis inteiras.
+0
+Correto! Ponteiros para funcao devem apontar para funcoes compativeis.
+Incorreto! Ponteiros para funcao nao apontam para inteiros.
+
+50
+A biblioteca qsort() utiliza ponteiros para funcoes como comparadores.
+1
+Correto! qsort recebe uma funcao de comparacao.
+Incorreto! a funcao de fato recebe ponteiros para funcoes.

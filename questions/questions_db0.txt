@@ -1,0 +1,29 @@
+1
+A linguagem C e compilada antes da execucao do programa.
+1
+Correto! O codigo-fonte em C precisa ser compilado.
+Incorreto! C e uma linguagem compilada.
+
+2
+O tipo int e usado para armazenar numeros inteiros.
+1
+Correto! O tipo int representa numeros inteiros.
+Incorreto! int e utilizado para valores inteiros.
+
+3
+O tipo float armazena apenas numeros inteiros.
+0
+Correto! float armazena numeros com casas decimais.
+Incorreto! float e usado para numeros reais.
+
+4
+O operador % calcula o resto da divisao inteira.
+1
+Correto! O operador % retorna o resto da divisao.
+Incorreto! % e usado para obter o resto da divisao inteira.
+
+5
+Em C, comentarios de uma linha comecam com //.
+1
+Correto! // inicia comentarios de uma linha.
+Incorreto! Comentarios de uma linha usam //.

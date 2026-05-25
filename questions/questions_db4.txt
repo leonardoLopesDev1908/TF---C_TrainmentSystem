@@ -1,0 +1,29 @@
+21
+Arquivos .h geralmente armazenam declaracoes e prototipos.
+1
+Correto! Headers normalmente possuem declaracoes.
+Incorreto! Arquivos .h guardam prototipos e definicoes compartilhadas.
+
+22
+Arquivos .c podem ser compilados separadamente.
+1
+Correto! A compilacao modular permite separar arquivos.
+Incorreto! Arquivos .c podem ser compilados individualmente.
+
+23
+A diretiva #include insere o conteudo de outro arquivo.
+1
+Correto! #include copia o conteudo do arquivo incluido.
+Incorreto! #include serve para inclusao de arquivos.
+
+24
+E impossivel dividir um programa C em multiplos arquivos.
+0
+Correto! Programas em C podem ser modularizados.
+Incorreto! C permite dividir o projeto em varios arquivos.
+
+25
+O linker e responsavel por unir arquivos objeto.
+1
+Correto! O linker junta os modulos compilados.
+Incorreto! A ligacao dos modulos e feita pelo linker.

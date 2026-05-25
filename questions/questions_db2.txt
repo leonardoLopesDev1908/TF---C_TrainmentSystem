@@ -1,0 +1,29 @@
+11
+Strings em C sao arrays de char terminados por \0.
+1
+Correto! Strings terminam com o caractere nulo.
+Incorreto! Strings em C usam \0 no final.
+
+12
+Uma struct agrupa variaveis de diferentes tipos.
+1
+Correto! Structs permitem agrupar varios dados.
+Incorreto! Structs agrupam variaveis relacionadas.
+
+13
+Todos os campos de uma union ocupam regioes diferentes da memoria.
+0
+Correto! Em unions os campos compartilham memoria.
+Incorreto! Os membros da union usam a mesma regiao de memoria.
+
+14
+Enums permitem criar constantes nomeadas.
+1
+Correto! enum define constantes inteiras simbolicas.
+Incorreto! Enums servem para constantes nomeadas.
+
+15
+strcmp() compara duas strings.
+1
+Correto! strcmp compara o conteudo das strings.
+Incorreto! strcmp e usada para comparacao de strings.

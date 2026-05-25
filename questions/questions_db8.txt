@@ -1,0 +1,29 @@
+41
+malloc() e usado para alocar memoria dinamicamente.
+1
+Correto! malloc reserva memoria em tempo de execucao.
+Incorreto! malloc serve para alocacao dinamica.
+
+42
+free() libera memoria previamente alocada.
+1
+Correto! free devolve memoria ao sistema.
+Incorreto! free libera memoria alocada.
+
+43
+calloc() inicializa a memoria alocada com zeros.
+1
+Correto! calloc zera os bytes alocados.
+Incorreto! calloc inicializa a memoria com zero.
+
+44
+Memoria dinamica e alocada na stack.
+0
+Correto! Memoria dinamica geralmente fica na heap.
+Incorreto! Alocacao dinamica ocorre na heap.
+
+45
+Vazamento de memoria ocorre quando memoria alocada nao e liberada.
+1
+Correto! Memory leak ocorre sem free adequado.
+Incorreto! Vazamentos acontecem quando memoria nao e liberada.
