@@ -15,6 +15,11 @@ void remove_question(question_t* questions, int i, int size);
 void select_questions(question_t* all_questions, 
         question_t* selected_questions, int size);
 
+//Ler um txt para cada modulo
+//Controle de questões repetidas
+//Usar um txt para registrar:
+//Data do questionario, nome do usuario e desempenho
+
 int main()
 {
     char user[MAX_NAME_SIZE];
@@ -27,24 +32,10 @@ int main()
     FILE* fptr = fopen("questions_db.txt", "r");
 
     load_questions(questions, fptr);
-
     question_t* selected_questions = (question_t*) malloc(SELECTED_QUESTIONS_SIZE * sizeof(question_t));
-    
     select_questions(questions, selected_questions, SELECTED_QUESTIONS_SIZE);
 
     loop_course(selected_questions, SELECTED_QUESTIONS_SIZE);
-
-    //testando
-    // for(int i = 0; i < MAX_QUESTIONS; i++)
-    // {
-    //     question_t q = questions[i];
-        
-    //     if(q.id == 0) break;
-
-    //     printf("Questao %d: \n%s \n%d \n%s \n%s\n",
-    //         q.id, q.description, q.ans, q.correct_msg, q.incorrect_msg
-    //     );
-    // }
 
     return 0;
 }
@@ -91,7 +82,7 @@ void select_questions(question_t* all_questions,
     int k, l;
     for(int i = 0; i < size; i += 2)
     {
-        k = rand() % size;
+        k = rand() % 5;
         
         do {
             l = rand() % size;
@@ -105,6 +96,7 @@ void select_questions(question_t* all_questions,
 
 void loop_course(question_t* questions, unsigned int count)
 {
+    unsigned int total_questions = count;
     int i = 0;
     int errors = 0;
     while(count > 0)
@@ -132,8 +124,10 @@ void loop_course(question_t* questions, unsigned int count)
         printf("\n");
     }
     printf("Todas questoes respondidas\n");
+
+    double performance = ((double)(total_questions - errors) / total_questions) * 100;
     printf("Seu desempenho: %d/%d\n %.2f%\n", 
-            count - errors, count, (errors/count)); 
+            total_questions - errors, total_questions, performance); 
 }
 
 void remove_question(question_t* questions, int i, int size)
