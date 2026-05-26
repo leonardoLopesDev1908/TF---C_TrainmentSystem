@@ -15,9 +15,6 @@ void remove_question(question_t* questions, int i, int size);
 void select_questions(question_t* all_questions, 
         question_t* selected_questions, int size);
 
-//Usar um txt para registrar:
-//  Data do questionario, nome do usuario e desempenho
-
 int main()
 {
     char user[MAX_NAME_SIZE];
@@ -91,12 +88,12 @@ void select_questions(question_t* all_questions,
 
     for(int i = 0; i < 10; i++)
     {
-        int base = i * 5;
+        int base = i * 10;
 
-        k = rand() % 5;
+        k = rand() % 10;
 
         do {
-            l = rand() % 5;
+            l = rand() % 10;
         } while(l == k);
 
         selected_questions[out_index++] = all_questions[base + k];

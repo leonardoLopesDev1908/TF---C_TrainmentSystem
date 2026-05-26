@@ -1,29 +1,59 @@
-31
+61
 O operador & pode ser usado para operacao AND bit a bit.
 1
 Correto! & realiza AND entre bits.
 Incorreto! & e usado para operacao AND bit a bit.
 
-32
+62
 O operador | realiza OR bit a bit.
 1
 Correto! | executa OR entre bits.
 Incorreto! | e usado para OR bit a bit.
 
-33
+63
 O operador << desloca bits para a esquerda.
 1
 Correto! << move bits para a esquerda.
 Incorreto! << realiza deslocamento a esquerda.
 
-34
+64
 O operador ~ inverte os bits de um numero.
 1
 Correto! ~ realiza complemento bit a bit.
 Incorreto! ~ inverte os bits.
 
-35
+65
 Manipulacao de bits nao pode ser usada para otimizacao.
 0
 Correto! Bitwise pode ajudar em otimizacoes.
 Incorreto! Operacoes bit a bit sao usadas em otimizacao.
+
+66
+O operador >> realiza deslocamento de bits para a direita.
+1
+Correto! >> desloca os bits para a direita.
+Incorreto! >> faz deslocamento à direita.
+
+67
+Operadores bit a bit são frequentemente usados em sistemas embarcados.
+1
+Correto! Bitwise é comum em baixo nível.
+Incorreto! Bitwise é usado em sistemas embarcados.
+
+68
+O operador ^ representa XOR bit a bit.
+1
+Correto! ^ executa XOR entre bits.
+Incorreto! ^ é o operador XOR.
+
+69
+Operações bit a bit so funcionam com tipos float.
+0
+Correto! Bitwise funciona com inteiros.
+Incorreto! Operações bit a bit não funcionam com float.
+
+70
+Mascaras de bits sao usadas para manipular bits especificos.
+1
+Correto! Mascaras isolam ou modificam bits.
+Incorreto! Mascaras de bits servem para manipulacao especifica.

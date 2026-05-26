@@ -1,29 +1,59 @@
-21
+41
 Arquivos .h geralmente armazenam declaracoes e prototipos.
 1
 Correto! Headers normalmente possuem declaracoes.
 Incorreto! Arquivos .h guardam prototipos e definicoes compartilhadas.
 
-22
+42
 Arquivos .c podem ser compilados separadamente.
 1
 Correto! A compilacao modular permite separar arquivos.
 Incorreto! Arquivos .c podem ser compilados individualmente.
 
-23
+43
 A diretiva #include insere o conteudo de outro arquivo.
 1
 Correto! #include copia o conteudo do arquivo incluido.
 Incorreto! #include serve para inclusao de arquivos.
 
-24
+44
 E impossivel dividir um programa C em multiplos arquivos.
 0
 Correto! Programas em C podem ser modularizados.
 Incorreto! C permite dividir o projeto em varios arquivos.
 
-25
+45
 O linker e responsavel por unir arquivos objeto.
 1
 Correto! O linker junta os modulos compilados.
 Incorreto! A ligacao dos modulos e feita pelo linker.
+
+46
+A diretiva #ifndef pode ser usada para evitar inclusoes multiplas.
+1
+Correto! #ifndef ajuda a prevenir inclusoes repetidas.
+Incorreto! #ifndef e usado para proteger headers.
+
+47
+Funcoes definidas em um arquivo .c podem ser usadas em outro arquivo com prototipos.
+1
+Correto! O prototipo permite acesso entre modulos.
+Incorreto! Funcoes podem ser compartilhadas usando headers.
+
+48
+A palavra-chave static em uma funcao limita sua visibilidade ao arquivo atual.
+1
+Correto! static restringe o escopo ao arquivo.
+Incorreto! static impede acesso externo a funcao.
+
+49
+O preprocessador executa o programa antes da compilacao.
+0
+Correto! O preprocessador apenas transforma o codigo antes da compilacao.
+Incorreto! Quem executa o programa e o sistema operacional.
+
+50
+Bibliotecas em C permitem reutilizacao de codigo.
+1
+Correto! Bibliotecas facilitam reutilizar funcionalidades.
+Incorreto! Bibliotecas existem para reaproveitamento de codigo.

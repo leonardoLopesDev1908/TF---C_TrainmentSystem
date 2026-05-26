@@ -1,29 +1,59 @@
-16
+31
 A funcao fopen() e usada para abrir arquivos.
 1
 Correto! fopen abre arquivos em diferentes modos.
 Incorreto! fopen serve para abrir arquivos.
 
-17
+32
 O modo "r" abre um arquivo para leitura.
 1
 Correto! "r" significa modo leitura.
 Incorreto! "r" e usado para leitura.
 
-18
+33
 fprintf() escreve dados formatados em arquivos.
 1
 Correto! fprintf escreve texto formatado em arquivos.
 Incorreto! fprintf serve para escrita formatada.
 
-19
+34
 fclose() fecha arquivos abertos.
 1
 Correto! fclose encerra o acesso ao arquivo.
 Incorreto! Arquivos devem ser fechados com fclose.
 
-20
+35
 Arquivos em C sao manipulados usando ponteiros FILE.
 1
 Correto! FILE* representa arquivos abertos.
 Incorreto! Arquivos utilizam FILE*.
+
+36
+O modo "a" em fopen() adiciona dados ao final do arquivo.
+1
+Correto! O modo "a" escreve no fim do arquivo.
+Incorreto! "a" serve para adicionar dados ao final.
+
+37
+fgets() pode ser usada para ler linhas de um arquivo.
+1
+Correto! fgets le linhas de texto.
+Incorreto! fgets e utilizada para leitura de linhas.
+
+38
+O modo "w" preserva obrigatoriamente o conteudo anterior do arquivo.
+0
+Correto! "w" recria o arquivo e pode apagar o conteudo antigo.
+Incorreto! O modo "w" sobrescreve o arquivo.
+
+39
+EOF representa o fim de um arquivo.
+1
+Correto! EOF indica fim de arquivo.
+Incorreto! EOF sinaliza o final do arquivo.
+
+40
+Um arquivo deve ser fechado apos o uso para liberar recursos.
+1
+Correto! fclose libera os recursos utilizados pelo arquivo.
+Incorreto! Arquivos devem ser fechados apos o uso.

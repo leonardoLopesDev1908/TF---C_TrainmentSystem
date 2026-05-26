@@ -1,29 +1,59 @@
-36
+71
 Ponteiros armazenam enderecos de memoria.
 1
 Correto! Ponteiros guardam enderecos.
 Incorreto! Ponteiros armazenam enderecos de memoria.
 
-37
+72
 O operador * pode ser usado para dereferenciar ponteiros.
 1
 Correto! * acessa o valor apontado.
 Incorreto! * e usado para acessar o conteudo apontado.
 
-38
+73
 O operador & retorna o endereco de uma variavel.
 1
 Correto! & obtem o endereco na memoria.
 Incorreto! & e usado para obter enderecos.
 
-39
+74
 Um ponteiro NULL aponta para um endereco valido de dados.
 0
 Correto! NULL representa ausencia de endereco valido.
 Incorreto! NULL nao aponta para dados validos.
 
-40
+75
 Ponteiros podem apontar para funcoes.
 1
 Correto! Funcoes tambem possuem enderecos.
 Incorreto! Ponteiros podem apontar para funcoes.
+
+76
+A aritmetica de ponteiros considera o tamanho do tipo apontado.
+1
+Correto! O incremento depende do tipo do ponteiro.
+Incorreto! Ponteiros avançam conforme o tipo.
+
+77
+Um ponteiro não inicializado pode conter um valor aleatório.
+1
+Correto! Ponteiros não inicializados são indeterminados.
+Incorreto! Ponteiros sem inicialização podem conter lixo.
+
+78
+É seguro dereferenciar qualquer ponteiro não nulo.
+0
+Correto! Mesmo não nulo, pode não apontar para memória válida.
+Incorreto! Nem todo ponteiro não nulo é seguro de usar.
+
+79
+Ponteiros podem ser usados para simular passagem por referência em C.
+1
+Correto! Ponteiros permitem modificar valores externos.
+Incorreto! Ponteiros permitem passagem por referência.
+
+80
+Um ponteiro para void pode apontar para qualquer tipo de dado.
+1
+Correto! void* é genérico.
+Incorreto! void* pode referenciar qualquer tipo.

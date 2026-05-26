@@ -1,29 +1,59 @@
-11
+21
 Strings em C sao arrays de char terminados por \0.
 1
 Correto! Strings terminam com o caractere nulo.
 Incorreto! Strings em C usam \0 no final.
 
-12
+22
 Uma struct agrupa variaveis de diferentes tipos.
 1
 Correto! Structs permitem agrupar varios dados.
 Incorreto! Structs agrupam variaveis relacionadas.
 
-13
+23
 Todos os campos de uma union ocupam regioes diferentes da memoria.
 0
 Correto! Em unions os campos compartilham memoria.
 Incorreto! Os membros da union usam a mesma regiao de memoria.
 
-14
+24
 Enums permitem criar constantes nomeadas.
 1
 Correto! enum define constantes inteiras simbolicas.
 Incorreto! Enums servem para constantes nomeadas.
 
-15
+25
 strcmp() compara duas strings.
 1
 Correto! strcmp compara o conteudo das strings.
 Incorreto! strcmp e usada para comparacao de strings.
+
+26
+strlen() retorna o tamanho de uma string.
+1
+Correto! strlen calcula a quantidade de caracteres da string.
+Incorreto! strlen retorna o tamanho da string.
+
+27
+O operador -> e usado para acessar membros de ponteiros para struct.
+1
+Correto! -> acessa membros de structs por ponteiro.
+Incorreto! -> e usado com ponteiros para struct.
+
+28
+Uma union pode armazenar todos os valores de seus campos ao mesmo tempo.
+0
+Correto! Apenas um valor por vez e armazenado corretamente.
+Incorreto! Os campos da union compartilham memoria.
+
+29
+O typedef permite criar apelidos para tipos.
+1
+Correto! typedef cria nomes alternativos para tipos.
+Incorreto! typedef serve para criar apelidos de tipos.
+
+30
+strcpy() concatena duas strings.
+0
+Correto! strcpy copia strings.
+Incorreto! Quem concatena strings e strcat().

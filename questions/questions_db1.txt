@@ -1,28 +1,58 @@
-6
+11
 Funcoes em C podem retornar valores.
 1
 Correto! Funcoes podem retornar dados usando return.
 Incorreto! Funcoes podem retornar valores.
 
-7
+12
 O tipo void indica ausencia de retorno.
 1
 Correto! void significa que a funcao nao retorna valor.
 Incorreto! void representa ausencia de retorno.
 
-8
+13
 Uma funcao pode ser chamada antes de ser declarada sem prototipo em qualquer situacao.
 0
 Correto! O ideal e declarar prototipos antes do uso.
 Incorreto! Funcoes normalmente precisam de declaracao previa.
 
-9
+14
 Parametros de funcoes permitem receber valores externos.
 1
 Correto! Parametros recebem dados enviados para a funcao.
 Incorreto! Parametros servem para entrada de dados.
 
-10
+15
+A funcao main e o ponto de entrada de um programa em C.
+1
+Correto! main e a funcao inicial do programa.
+Incorreto! A execucao comeca na funcao main.
+
+16
+Funcoes em C podem retornar valores.
+1
+Correto! Funcoes podem retornar dados usando return.
+Incorreto! Funcoes podem retornar valores.
+
+17
+O tipo void indica ausencia de retorno.
+1
+Correto! void significa que a funcao nao retorna valor.
+Incorreto! void representa ausencia de retorno.
+
+18
+Uma funcao pode ser chamada antes de ser declarada sem prototipo em qualquer situacao.
+0
+Correto! O ideal e declarar prototipos antes do uso.
+Incorreto! Funcoes normalmente precisam de declaracao previa.
+
+19
+Parametros de funcoes permitem receber valores externos.
+1
+Correto! Parametros recebem dados enviados para a funcao.
+Incorreto! Parametros servem para entrada de dados.
+
+20
 A funcao main e o ponto de entrada de um programa em C.
 1
 Correto! main e a funcao inicial do programa.

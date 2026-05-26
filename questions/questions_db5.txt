@@ -1,29 +1,59 @@
-26
+51
 Bibliotecas estaticas sao incorporadas ao executavel.
 1
 Correto! O codigo da biblioteca e incluido no binario final.
 Incorreto! Bibliotecas estaticas sao incorporadas ao executavel.
 
-27
+52
 Bibliotecas dinamicas podem ser compartilhadas entre programas.
 1
 Correto! Bibliotecas dinamicas podem ser reutilizadas em memoria.
 Incorreto! Bibliotecas dinamicas podem ser compartilhadas.
 
-28
+53
 Arquivos .so sao comuns em bibliotecas dinamicas no Linux.
 1
 Correto! .so representa shared objects.
 Incorreto! Bibliotecas compartilhadas usam .so.
 
-29
+53
 Bibliotecas estaticas normalmente possuem extensao .a no Linux.
 1
 Correto! Bibliotecas estaticas usam extensao .a.
 Incorreto! .a e a extensao tipica de bibliotecas estaticas.
 
-30
+55
 Bibliotecas dinamicas aumentam obrigatoriamente o tamanho do executavel final.
 0
 Correto! O codigo pode ser carregado externamente.
 Incorreto! Bibliotecas dinamicas nao precisam ser incorporadas ao executavel.
+
+56
+Bibliotecas dinâmicas são carregadas em tempo de execução.
+1
+Correto! Elas são carregadas quando o programa está rodando.
+Incorreto! Bibliotecas dinâmicas são carregadas em tempo de execução.
+
+57
+A função dlopen() é usada para carregar bibliotecas dinâmicas em alguns sistemas Unix-like.
+1
+Correto! dlopen permite carregar bibliotecas em runtime.
+Incorreto! dlopen serve para abrir bibliotecas dinamicamente.
+
+58
+O linker estático resolve todas as dependências em tempo de compilação.
+1
+Correto! O linking estático acontece antes da execução.
+Incorreto! O linker estático resolve dependências na compilação.
+
+59
+Bibliotecas dinâmicas sempre precisam estar no mesmo diretório do executável.
+0
+Correto! Elas podem estar em caminhos definidos pelo sistema.
+Incorreto! Bibliotecas dinâmicas podem estar em outros diretórios.
+
+60
+O comando ldd pode ser usado para verificar dependências de bibliotecas em um executável Linux.
+1
+Correto! ldd mostra bibliotecas dinâmicas necessárias.
+Incorreto! ldd exibe dependências de bibliotecas.

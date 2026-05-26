@@ -27,3 +27,33 @@ Em C, comentarios de uma linha comecam com //.
 1
 Correto! // inicia comentarios de uma linha.
 Incorreto! Comentarios de uma linha usam //.
+
+6
+O operador == e usado para comparar dois valores.
+1
+Correto! == verifica se dois valores sao iguais.
+Incorreto! == e o operador de comparacao.
+
+7
+A funcao printf e utilizada para receber dados do usuario.
+0
+Correto! printf serve para exibir dados na tela.
+Incorreto! Quem recebe dados do usuario e normalmente o scanf.
+
+8
+Um array em C armazena varios valores do mesmo tipo.
+1
+Correto! Arrays armazenam elementos do mesmo tipo.
+Incorreto! Arrays guardam varios valores do mesmo tipo.
+
+9
+A funcao main e o ponto de entrada de um programa em C.
+1
+Correto! A execucao do programa inicia na main.
+Incorreto! Todo programa em C comeca pela funcao main.
+
+10
+O operador && representa o OU logico.
+0
+Correto! && representa o E logico.
+Incorreto! O operador OU logico e ||.
