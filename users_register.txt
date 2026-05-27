@@ -1,0 +1,12 @@
+Leonardo //username
+1 //dias consecutivos
+1111 //dia da ultima secao
+85.0  //media
+
+Lucas
+10
+1234
+90.0
+
+Considerar criar um arquivo por user
+

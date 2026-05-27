@@ -1,5 +1,6 @@
 #include "question.h"
 
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -14,9 +15,14 @@ void loop_course(question_t* questions, unsigned int size, char* user);
 void remove_question(question_t* questions, int i, int size);
 void select_questions(question_t* all_questions, 
         question_t* selected_questions, int size);
+void register_session(char* user, double performance);
+void verify_historic();
 
-//Usar um txt para registrar:
-//  Data do questionario, nome do usuario e desempenho
+/*A aplicação deverá ser capaz de calcular:
+• quantidade total de utilizações da ferramenta;
+• pontuação total acumulada;
+• média de pontuação;
+• quantidade de dias consecutivos recentes de utilização*/
 
 int main()
 {
@@ -139,11 +145,17 @@ void loop_course(question_t* questions, unsigned int count, char* user)
     printf("Seu desempenho: %d/%d\n%.2f%%\n", 
             total_questions - errors, total_questions, performance); 
 
+    register_session(user, performance);
+    verify_historic();
+}
+
+void register_session(char* user, double performance)
+{
     FILE *file = fopen("log_sessions.txt", "a");
     
     if(file == NULL)
     {
-        printf("Arquivo indisponivel\n");
+        printf("Log de sessoes indisponivel\n");
         return;
     }
 
@@ -154,6 +166,79 @@ void loop_course(question_t* questions, unsigned int count, char* user)
     timeStr[strcspn(timeStr, "\n")] = '\0'; 
     
     fprintf(file, "%s (%s): %.2f\n", user, ctime(&currentTime), performance);
+    fclose(file);
+}
+
+void verify_historic()
+{
+    FILE *file = fopen("users_register.txt", "r+");
+    if(file == NULL)
+    {
+        printf("Registro de usuarios indisponivel\n");
+        return;
+    }
+
+    time_t t;
+    time(&t);
+
+    bool user_found = false;
+    char line[512];
+    
+    while(fgets(line, sizeof(line), file) == NULL)
+    {
+        if(line != *user) 
+            continue;
+        else 
+        {
+            user_found = true;
+            break;
+        }
+    } 
+    
+    long last_date;
+    long accumulated_sessions;
+    
+    if(user_found)
+    {
+        
+        if(fgets(line, sizeof(line), file) == NULL)
+        {
+            fclose(file);
+            return;
+        }
+
+        accumulated_sessions = atoi(line);
+    
+        if(fgets(line, sizeof(line), file) == NULL)
+        {
+            fclose(file);
+            return;
+        }
+            last_date = atoi(line);
+    }
+
+    struct tm tm = *localtime(&t);
+
+    tm.tm_hour = 0;
+    tm.tm_min = 0;
+    tm.tm_sec = 0;
+
+    time_t normalized = mktime(&tm);
+
+    long days = normalized / 86400;
+
+    if((days - last_date) == 1)
+        accumulated_sessions++;
+    else if(days != last_date)
+        accumulated_sessions = 1;
+
+    rewind(file);
+    
+    printf("Accumulated sessions: %ld\n", accumulated_sessions);
+    printf("Last day: %ld\n", last_date);
+
+    fprintf(file, "%ld\n %ld", accumulated_sessions, days);
+    
     fclose(file);
 }
 
