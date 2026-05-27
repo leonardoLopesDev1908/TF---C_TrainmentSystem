@@ -1,0 +1,10 @@
+Leonardo (Mon May 25 20:00:28 2026
+): 95.00
+Leonardo (Tue May 26 18:22:13 2026
+): 95.00
+Leonardo (Tue May 26 18:38:41 2026
+): 90.00
+Leonardo (Wed May 27 20:11:23 2026
+): 100.00
+Leonardo (Wed May 27 20:19:28 2026
+): 9.50

@@ -1,0 +1,6 @@
+Wed May 27 20:19:28 2026  //Date
+20600                     //Date in day format
+1                         //Sessoes totais
+1                         //Ofensiva
+9                         //Nota total acumulada
+9.00                      //Nota media
