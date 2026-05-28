@@ -11,7 +11,7 @@ TARGET = app
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-	$(CC) $(OBJ) -o $(TARGET)
+	$(CC) $(OBJ) -o $(TARGET) -lcrypto
 
 build/%.o: src/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
