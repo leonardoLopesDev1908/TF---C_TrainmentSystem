@@ -7,7 +7,7 @@
 bool auth(char* user)
 {
     char path[64];
-    snprintf(path, sizeof(path), "user_register/%s.txt", user);
+    snprintf(path, sizeof(path), "user_registers/%s.txt", user);
     
     FILE *file = fopen(path, "r");
     if(file == NULL)
@@ -43,7 +43,7 @@ bool auth(char* user)
         return true;
     }
     
-    char senha[256];
+    char senha[32];
 
     printf("Senha: ");
     scanf("%127s", &senha);
@@ -59,15 +59,17 @@ bool auth(char* user)
     }
     hex[64] = '\0';
 
-    char line[512];
-    char last_line[512] = "";
-    while(fgets(line, sizeof(line), file) != NULL)
+    char line[65];
+    if(fgets(line, sizeof(line), file) == NULL)
     {
-        strcpy(last_line, line);
+        printf("Erro lendo arquivo\n");
+        fclose(file);
+        return false;
     }
 
-    last_line[strcspn(last_line, "\n")] = '\0';
     fclose(file);
-    
-    return strcmp(hex, last_line) == 0;
+   
+
+    printf("%s\n%s\n", hex, line);
+    return strcmp(hex, line) == 0;
 }

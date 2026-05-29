@@ -1,6 +1,7 @@
+#include "auth.h"
 #include "question.h"
 #include "questions.h"
-#include "user.h"
+#include "session.h"
 
 #include <stdbool.h>
 #include <stdio.h>
@@ -13,13 +14,18 @@
 
 void loop_course(question_t* questions, unsigned int size, char* user);
 
-
 int main()
 {
     char user[MAX_NAME_SIZE];
     
     printf("Seu nome: ");
     scanf("%s", &user);
+    
+    if(!auth(user))
+    {
+        printf("Senha incorreta!\n");
+        return 1;
+    }
 
     question_t* questions = (question_t*) malloc(MAX_QUESTIONS * sizeof(question_t));
 
