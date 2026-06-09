@@ -28,11 +28,11 @@ int main()
     }
 
     question_t* questions = (question_t*) malloc(MAX_QUESTIONS * sizeof(question_t));
-
     load_questions(questions);
-    question_t* selected_questions = (question_t*) malloc(SELECTED_QUESTIONS_SIZE * sizeof(question_t));
-    select_questions(questions, selected_questions);
 
+    question_t* selected_questions = (question_t*) malloc(SELECTED_QUESTIONS_SIZE * sizeof(question_t));
+    
+    select_questions(questions, selected_questions);
     loop_course(selected_questions, SELECTED_QUESTIONS_SIZE, user);
 
     free(questions);
@@ -75,7 +75,7 @@ void loop_course(question_t* questions, unsigned int count, char* user)
     }
     printf("Todas questoes respondidas\n");
 
-    double performance = ((double)(total_questions - errors) / total_questions) * 100;
+    double performance = ((double)(total_questions - errors) / total_questions) * 10;
     printf("Seu desempenho: %d/%d\n%.2f%%\n", 
             total_questions - errors, total_questions, performance); 
 
