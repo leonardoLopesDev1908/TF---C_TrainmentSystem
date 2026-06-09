@@ -82,9 +82,6 @@ bool auth(char* user)
     }
 
     fclose(file);
-   
-
-    printf("%s\n%s\n", hex, line);
     return strcmp(hex, line) == 0;
 }
 

@@ -35,12 +35,16 @@ int main()
 
     loop_course(selected_questions, SELECTED_QUESTIONS_SIZE, user);
 
+    free(questions);
+    free(selected_questions);
+
     return 0;
 }
 
 void loop_course(question_t* questions, unsigned int count, char* user)
 {
     unsigned int total_questions = count;
+    bool sign[count];  
     int i = 0;
     int errors = 0;
     while(count > 0)
@@ -57,7 +61,8 @@ void loop_course(question_t* questions, unsigned int count, char* user)
         {
             printf("%s\n", questions[i].incorrect_msg);
             ++i;
-            errors++;
+            if(!sign[i])
+                errors++;
         }
         else
         {
@@ -66,6 +71,7 @@ void loop_course(question_t* questions, unsigned int count, char* user)
             remove_question(questions, i, count);
         }
         printf("\n");
+        sign[i] = true;
     }
     printf("Todas questoes respondidas\n");
 
