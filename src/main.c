@@ -44,25 +44,38 @@ int main()
 void loop_course(question_t* questions, unsigned int count, char* user)
 {
     unsigned int total_questions = count;
-    bool sign[count];  
     int i = 0;
     int errors = 0;
+    unsigned int counting_questions = 1;
     while(count > 0)
     {
         if(i >= count) i = 0;
+        if(counting_questions > total_questions)
+            printf("Questão repetida\n");
+        else
+            printf("Contagem de questões: %d/%d\n", counting_questions, total_questions);
+        char user_answer = 'F';
+        int int_ans = 0;
+        
+        do
+        {
+            printf("%d: \n%s\n", questions[i].id, questions[i].description);
+            printf("Resposta (F=Falso / V=Verdadeiro): ");
+            scanf(" %c", &user_answer);  
+        
+        }while(user_answer != 'V' && user_answer != 'F'
+                && user_answer != 'v' && user_answer != 'f');
 
-        int user_answer = 0;
+        if(user_answer == 'F' || user_answer == 'f')
+            int_ans = 0;
+        else if(user_answer == 'V' || user_answer == 'v')
+            int_ans = 1; 
 
-        printf("%d: \n%s\n", questions[i].id, questions[i].description);
-        printf("1 para Verdadeiro\n0 para Falso: ");
-        scanf("%d", &user_answer);  
-
-        if(user_answer != questions[i].ans)
+        if(int_ans != questions[i].ans)
         {
             printf("%s\n", questions[i].incorrect_msg);
             ++i;
-            if(!sign[i])
-                errors++;
+            errors++;
         }
         else
         {
@@ -71,13 +84,13 @@ void loop_course(question_t* questions, unsigned int count, char* user)
             remove_question(questions, i, count);
         }
         printf("\n");
-        sign[i] = true;
+        counting_questions++; 
     }
     printf("Todas questoes respondidas\n");
 
-    double performance = ((double)(total_questions - errors) / total_questions) * 10;
-    printf("Seu desempenho: %d/%d\n%.2f%%\n", 
-            total_questions - errors, total_questions, performance); 
+    double performance = ((double)(total_questions) / (total_questions + errors)) * 10;
+    printf("Seu desempenho: %d erros de %d questões.\n%.2f%%\n", 
+            errors, total_questions, performance * 10); 
 
     register_session(user, performance);
     verify_historic(user, performance);
