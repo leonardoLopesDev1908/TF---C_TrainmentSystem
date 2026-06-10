@@ -1,59 +1,56 @@
-81
-malloc() e usado para alocar memoria dinamicamente.
+9000
+A alocação dinâmica permite reservar memória durante a execução do programa.
 1
-Correto! malloc reserva memoria em tempo de execucao.
-Incorreto! malloc serve para alocacao dinamica.
-
-82
-free() libera memoria previamente alocada.
-1
-Correto! free devolve memoria ao sistema.
-Incorreto! free libera memoria alocada.
-
-83
-calloc() inicializa a memoria alocada com zeros.
-1
-Correto! calloc zera os bytes alocados.
-Incorreto! calloc inicializa a memoria com zero.
-
-84
-Memoria dinamica e alocada na stack.
+Correto! A principal característica da alocação dinâmica é obter memória em tempo de execução.
+Incorreto. A alocação dinâmica é justamente utilizada para reservar memória durante a execução do programa.
+9001
+A quantidade de memória utilizada por um programa precisa ser totalmente definida antes da compilação.
 0
-Correto! Memoria dinamica geralmente fica na heap.
-Incorreto! Alocacao dinamica ocorre na heap.
-
-85
-Vazamento de memoria ocorre quando memoria alocada nao e liberada.
+Correto! A alocação dinâmica permite definir parte da memória durante a execução.
+Incorreto. Nem toda memória precisa ser definida antes da compilação.
+9002
+A alocação dinâmica é especialmente útil quando a quantidade de dados só é conhecida durante a execução.
 1
-Correto! Memory leak ocorre sem free adequado.
-Incorreto! Vazamentos acontecem quando memoria nao e liberada.
-
-86
-realloc() pode ser usado para redimensionar um bloco de memória já alocado.
-1
-Correto! realloc ajusta o tamanho de uma alocação existente.
-Incorreto! realloc serve para redimensionar memória.
-
-87
-Se realloc() falhar, ele retorna NULL e a memória original ainda é válida.
-1
-Correto! O bloco antigo não é perdido em caso de falha.
-Incorreto! realloc não libera automaticamente o bloco original.
-
-88
-A heap cresce e diminui automaticamente sem intervenção do programador.
+Correto! Esse é um dos cenários mais comuns para utilização dessa técnica.
+Incorreto. A alocação dinâmica é indicada quando o tamanho dos dados não é conhecido previamente.
+9003
+Memória alocada dinamicamente é sempre liberada automaticamente assim que deixa de ser utilizada.
 0
-Correto! A gestão da heap depende de malloc/free.
-Incorreto! O programador controla a alocação e liberação.
-
-89
-A stack é usada principalmente para variáveis locais e chamadas de função.
+Correto! Em C, normalmente o programador é responsável pela liberação da memória.
+Incorreto. A memória dinâmica deve ser liberada explicitamente quando não for mais necessária.
+9004
+O uso inadequado da memória dinâmica pode causar desperdício de memória ao longo da execução.
 1
-Correto! Stack armazena contexto de execução.
-Incorreto! Stack guarda variáveis locais e chamadas.
-
-90
-Memory leak pode causar aumento progressivo de uso de memória no programa.
+Correto! A falta de liberação adequada pode gerar vazamentos de memória.
+Incorreto. O gerenciamento incorreto da memória dinâmica pode desperdiçar recursos.
+9005
+A memória obtida dinamicamente permanece disponível apenas enquanto o programa estiver em execução.
 1
-Correto! Vazamentos acumulam memória não liberada.
-Incorreto! Leak causa crescimento de consumo de memória.
+Correto! Ela deixa de existir após o encerramento do processo.
+Incorreto. A memória dinâmica pertence ao processo e existe apenas durante sua execução.
+9006
+A alocação dinâmica elimina completamente a necessidade de utilizar ponteiros.
+0
+Correto! Ponteiros são fundamentais para acessar memória dinâmica.
+Incorreto. O acesso à memória dinâmica depende do uso de ponteiros.
+9007
+Um ponteiro pode ser utilizado para acessar uma região de memória obtida dinamicamente.
+1
+Correto! O endereço da memória alocada é armazenado em um ponteiro.
+Incorreto. Ponteiros são o mecanismo utilizado para acessar memória dinâmica.
+9008
+Vetores grandes podem ser candidatos ao uso de alocação dinâmica.
+1
+Correto! Essa estratégia evita limitações associadas à memória automática.
+Incorreto. Vetores muito grandes frequentemente são alocados dinamicamente.
+9009
+A alocação dinâmica só pode ser utilizada para armazenar valores numéricos.
+0
+Correto! Ela pode armazenar qualquer tipo de dado.
+Incorreto. Memória dinâmica pode ser utilizada para diversos tipos de dados.
+9010
+Uma matriz pode ser representada internamente como uma região linear de memória.
+1
+Correto! Essa é uma das abordagens possíveis para matrizes dinâmicas.
+Incorreto. Matrizes podem ser armazenadas em memória linear.
+

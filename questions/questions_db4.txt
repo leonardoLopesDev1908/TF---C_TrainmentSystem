@@ -1,59 +1,56 @@
-41
-Arquivos .h geralmente armazenam declaracoes e prototipos.
+5000
+A modularização tem como objetivo organizar programas grandes em partes menores e mais fáceis de gerenciar.
 1
-Correto! Headers normalmente possuem declaracoes.
-Incorreto! Arquivos .h guardam prototipos e definicoes compartilhadas.
-
-42
-Arquivos .c podem ser compilados separadamente.
-1
-Correto! A compilacao modular permite separar arquivos.
-Incorreto! Arquivos .c podem ser compilados individualmente.
-
-43
-A diretiva #include insere o conteudo de outro arquivo.
-1
-Correto! #include copia o conteudo do arquivo incluido.
-Incorreto! #include serve para inclusao de arquivos.
-
-44
-E impossivel dividir um programa C em multiplos arquivos.
+Correto! A modularização ajuda a organizar e manter programas complexos.
+Incorreto. Um dos principais objetivos da modularização é dividir programas grandes em partes menores e mais gerenciáveis.
+5001
+A modularização dificulta a reutilização de código em diferentes programas.
 0
-Correto! Programas em C podem ser modularizados.
-Incorreto! C permite dividir o projeto em varios arquivos.
-
-45
-O linker e responsavel por unir arquivos objeto.
+Correto! A modularização favorece a reutilização de código.
+Incorreto. Um dos benefícios da modularização é justamente facilitar a reutilização de código.
+5002
+A modularização pode facilitar o trabalho em equipe durante o desenvolvimento de software.
 1
-Correto! O linker junta os modulos compilados.
-Incorreto! A ligacao dos modulos e feita pelo linker.
-
-46
-A diretiva #ifndef pode ser usada para evitar inclusoes multiplas.
-1
-Correto! #ifndef ajuda a prevenir inclusoes repetidas.
-Incorreto! #ifndef e usado para proteger headers.
-
-47
-Funcoes definidas em um arquivo .c podem ser usadas em outro arquivo com prototipos.
-1
-Correto! O prototipo permite acesso entre modulos.
-Incorreto! Funcoes podem ser compartilhadas usando headers.
-
-48
-A palavra-chave static em uma funcao limita sua visibilidade ao arquivo atual.
-1
-Correto! static restringe o escopo ao arquivo.
-Incorreto! static impede acesso externo a funcao.
-
-49
-O preprocessador executa o programa antes da compilacao.
+Correto! Diferentes desenvolvedores podem trabalhar em módulos distintos.
+Incorreto. A modularização contribui para a divisão de tarefas entre membros da equipe.
+5003
+Em uma aplicação modular, todas as funções precisam permanecer em um único arquivo-fonte.
 0
-Correto! O preprocessador apenas transforma o codigo antes da compilacao.
-Incorreto! Quem executa o programa e o sistema operacional.
-
-50
-Bibliotecas em C permitem reutilizacao de codigo.
+Correto! A modularização distribui funções em múltiplos arquivos.
+Incorreto. A modularização busca justamente separar funcionalidades em diferentes arquivos.
+5004
+Arquivos de cabeçalho geralmente são utilizados para armazenar declarações.
 1
-Correto! Bibliotecas facilitam reutilizar funcionalidades.
-Incorreto! Bibliotecas existem para reaproveitamento de codigo.
+Correto! Arquivos .h normalmente contêm declarações e protótipos.
+Incorreto. Arquivos de cabeçalho são destinados principalmente a declarações.
+5005
+Arquivos de implementação geralmente contêm o código das funções declaradas nos cabeçalhos.
+1
+Correto! A implementação das funções normalmente fica em arquivos separados.
+Incorreto. Arquivos de implementação armazenam o código das funções.
+5006
+Um arquivo de cabeçalho deve conter apenas implementações completas das funções.
+0
+Correto! Arquivos de cabeçalho normalmente contêm declarações.
+Incorreto. Implementações costumam ficar em arquivos de código-fonte.
+5007
+Um módulo pode ser composto por um arquivo de cabeçalho e um arquivo de implementação.
+1
+Correto! Essa é uma organização comum em programas escritos em C.
+Incorreto. Um módulo geralmente possui um arquivo de declaração e outro de implementação.
+5008
+Para utilizar funções de outro módulo, normalmente é necessário incluir o arquivo de cabeçalho correspondente.
+1
+Correto! O cabeçalho fornece as declarações necessárias ao compilador.
+Incorreto. O uso de funções externas normalmente requer a inclusão do cabeçalho adequado.
+5009
+Incluir um cabeçalho fornece automaticamente a implementação de todas as funções nele declaradas.
+0
+Correto! O cabeçalho fornece apenas as declarações.
+Incorreto. A implementação permanece em arquivos separados.
+5010
+Protótipos de funções são normalmente colocados em arquivos de cabeçalho.
+1
+Correto! Essa é uma das finalidades principais dos arquivos .h.
+Incorreto. Protótipos geralmente ficam em arquivos de cabeçalho.
+

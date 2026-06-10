@@ -1,59 +1,55 @@
-21
-Strings em C sao arrays de char terminados por \0.
+3000
+Em C, uma string é um vetor de caracteres terminado por '\0'.
 1
-Correto! Strings terminam com o caractere nulo.
-Incorreto! Strings em C usam \0 no final.
-
-22
-Uma struct agrupa variaveis de diferentes tipos.
-1
-Correto! Structs permitem agrupar varios dados.
-Incorreto! Structs agrupam variaveis relacionadas.
-
-23
-Todos os campos de uma union ocupam regioes diferentes da memoria.
+Correto! Em C, strings são vetores de caracteres finalizados pelo caractere nulo '\0'.
+Incorreto. Em C, uma string é um vetor de caracteres terminado pelo caractere nulo '\0'.
+3001
+O caractere '\0' indica o início de uma string em C.
 0
-Correto! Em unions os campos compartilham memoria.
-Incorreto! Os membros da union usam a mesma regiao de memoria.
-
-24
-Enums permitem criar constantes nomeadas.
+Correto! O caractere '\0' não indica o início da string.
+Incorreto. O caractere '\0' indica o final da string, não o início.
+3002
+Strings em C são armazenadas em posições de memória sequenciais.
 1
-Correto! enum define constantes inteiras simbolicas.
-Incorreto! Enums servem para constantes nomeadas.
-
-25
-strcmp() compara duas strings.
+Correto! Strings são armazenadas como arrays de char em memória sequencial.
+Incorreto. Strings em C são armazenadas como arrays de caracteres em posições sequenciais.
+3003
+O especificador %s é usado para imprimir strings com printf().
 1
-Correto! strcmp compara o conteudo das strings.
-Incorreto! strcmp e usada para comparacao de strings.
-
-26
+Correto! %s é o especificador usado por printf() para imprimir strings.
+Incorreto. Para imprimir strings com printf() utiliza-se o especificador %s.
+3004
+O compilador adiciona automaticamente '\0' ao final de literais string.
+1
+Correto! Literais string recebem automaticamente o terminador '\0'.
+Incorreto. O compilador adiciona automaticamente '\0' ao final de literais string.
+3005
+O tamanho de uma string em C inclui o caractere '\0'.
+0
+Correto! O tamanho lógico da string não inclui o terminador '\0'.
+Incorreto. O tamanho retornado pelas funções usuais não inclui o '\0'.
+3006
+Uma string literal pode ser modificada diretamente.
+0
+Correto! Strings literais normalmente ficam em memória somente leitura.
+Incorreto. Strings literais não devem ser modificadas diretamente.
+3007
+Arrays de char inicializados com string literal incluem automaticamente '\0'.
+1
+Correto! O terminador '\0' é incluído automaticamente.
+Incorreto. Arrays de char inicializados com literais incluem o '\0'.
+3008
+Arrays podem armazenar dados de tipos diferentes.
+0
+Correto! Arrays são homogêneos.
+Incorreto. Arrays armazenam apenas elementos do mesmo tipo.
+3009
+Arrays são estruturas heterogêneas.
+0
+Correto! Arrays são homogêneos.
+Incorreto. Estruturas heterogêneas são as structs.
+3010
 strlen() retorna o tamanho de uma string.
 1
-Correto! strlen calcula a quantidade de caracteres da string.
-Incorreto! strlen retorna o tamanho da string.
-
-27
-O operador -> e usado para acessar membros de ponteiros para struct.
-1
-Correto! -> acessa membros de structs por ponteiro.
-Incorreto! -> e usado com ponteiros para struct.
-
-28
-Uma union pode armazenar todos os valores de seus campos ao mesmo tempo.
-0
-Correto! Apenas um valor por vez e armazenado corretamente.
-Incorreto! Os campos da union compartilham memoria.
-
-29
-O typedef permite criar apelidos para tipos.
-1
-Correto! typedef cria nomes alternativos para tipos.
-Incorreto! typedef serve para criar apelidos de tipos.
-
-30
-strcpy() concatena duas strings.
-0
-Correto! strcpy copia strings.
-Incorreto! Quem concatena strings e strcat().
+Correto! strlen() retorna o número de caracteres antes do '\0'.
+Incorreto. strlen() retorna o tamanho da string até antes do terminador '\0'.

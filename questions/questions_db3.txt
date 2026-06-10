@@ -1,59 +1,55 @@
-31
-A funcao fopen() e usada para abrir arquivos.
+4000
+Os parâmetros argc e argv() da função main() fornecem informações sobre os argumentos passados na linha de comando.
 1
-Correto! fopen abre arquivos em diferentes modos.
-Incorreto! fopen serve para abrir arquivos.
-
-32
-O modo "r" abre um arquivo para leitura.
-1
-Correto! "r" significa modo leitura.
-Incorreto! "r" e usado para leitura.
-
-33
-fprintf() escreve dados formatados em arquivos.
-1
-Correto! fprintf escreve texto formatado em arquivos.
-Incorreto! fprintf serve para escrita formatada.
-
-34
-fclose() fecha arquivos abertos.
-1
-Correto! fclose encerra o acesso ao arquivo.
-Incorreto! Arquivos devem ser fechados com fclose.
-
-35
-Arquivos em C sao manipulados usando ponteiros FILE.
-1
-Correto! FILE* representa arquivos abertos.
-Incorreto! Arquivos utilizam FILE*.
-
-36
-O modo "a" em fopen() adiciona dados ao final do arquivo.
-1
-Correto! O modo "a" escreve no fim do arquivo.
-Incorreto! "a" serve para adicionar dados ao final.
-
-37
-fgets() pode ser usada para ler linhas de um arquivo.
-1
-Correto! fgets le linhas de texto.
-Incorreto! fgets e utilizada para leitura de linhas.
-
-38
-O modo "w" preserva obrigatoriamente o conteudo anterior do arquivo.
+Correto! argc e argv() são utilizados para acessar os argumentos informados na execução do programa.
+Incorreto. argc e argv() existem justamente para fornecer acesso aos argumentos da linha de comando.
+4001
+argc representa a quantidade de caracteres digitados na linha de comando.
 0
-Correto! "w" recria o arquivo e pode apagar o conteudo antigo.
-Incorreto! O modo "w" sobrescreve o arquivo.
-
-39
-EOF representa o fim de um arquivo.
+Correto! argc representa a quantidade de argumentos, e não de caracteres.
+Incorreto. argc indica o número de argumentos presentes na linha de comando.
+4002
+argv() pode ser visto como um vetor de strings.
 1
-Correto! EOF indica fim de arquivo.
-Incorreto! EOF sinaliza o final do arquivo.
-
-40
-Um arquivo deve ser fechado apos o uso para liberar recursos.
+Correto! Cada posição de argv() contém uma string correspondente a um argumento.
+Incorreto. argv() é tratado como um vetor de strings contendo os argumentos.
+4003
+O nome utilizado para executar o programa normalmente aparece entre os argumentos disponíveis.
 1
-Correto! fclose libera os recursos utilizados pelo arquivo.
-Incorreto! Arquivos devem ser fechados apos o uso.
+Correto! O próprio comando utilizado para executar o programa faz parte dos argumentos.
+Incorreto. O nome do programa normalmente é incluído na lista de argumentos.
+4004
+A biblioteca stdio.h contém definições relacionadas às operações de entrada e saída em C.
+1
+Correto! As operações de E/S em C são definidas em stdio.h.
+Incorreto. stdio.h é a biblioteca padrão para operações de entrada e saída.
+4005
+O símbolo EOF representa o início de um arquivo.
+0
+Correto! EOF representa fim de arquivo.
+Incorreto. EOF é utilizado para indicar fim de arquivo ou erro em determinadas operações.
+4006
+FILE é um tipo utilizado para representar descritores de arquivos em C.
+1
+Correto! FILE é o tipo utilizado para manipular arquivos na biblioteca padrão.
+Incorreto. FILE representa um descritor de arquivo utilizado pelas funções da biblioteca padrão.
+4007
+É possível realizar operações de leitura e escrita em arquivos sem abri-los previamente.
+0
+Correto! Um arquivo precisa ser aberto antes de ser utilizado.
+Incorreto. Antes de acessar um arquivo é necessário abri-lo.
+4008
+Abrir um arquivo estabelece uma associação entre um arquivo físico e um descritor lógico utilizado pelo processo.
+1
+Correto! A abertura cria essa associação necessária para o acesso ao arquivo.
+Incorreto. A abertura do arquivo cria um descritor lógico associado ao arquivo físico.
+4009
+Cada processo mantém informações sobre os arquivos abertos durante sua execução.
+1
+Correto! O sistema mantém estruturas para controlar os arquivos utilizados pelo processo.
+Incorreto. Os processos mantêm informações sobre os arquivos atualmente abertos.
+4010
+FILE * representa um ponteiro para um descritor de arquivo.
+1
+Correto! FILE * é o tipo normalmente retornado na abertura de arquivos.
+Incorreto. FILE * é utilizado para referenciar um arquivo aberto.

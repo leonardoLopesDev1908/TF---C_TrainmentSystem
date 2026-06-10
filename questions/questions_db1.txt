@@ -1,59 +1,55 @@
-11
-Funcoes em C podem retornar valores.
+2000
+Uma função em C é um segmento de programa independente que executa uma tarefa específica.
 1
-Correto! Funcoes podem retornar dados usando return.
-Incorreto! Funcoes podem retornar valores.
-
-12
-O tipo void indica ausencia de retorno.
-1
-Correto! void significa que a funcao nao retorna valor.
-Incorreto! void representa ausencia de retorno.
-
-13
-Uma funcao pode ser chamada antes de ser declarada sem prototipo em qualquer situacao.
+Correto! Funções em C encapsulam tarefas específicas em blocos reutilizáveis de código.
+Incorreto. Funções em C são segmentos independentes destinados à execução de tarefas específicas.
+2001
+Toda função em C obrigatoriamente deve receber parâmetros.
 0
-Correto! O ideal e declarar prototipos antes do uso.
-Incorreto! Funcoes normalmente precisam de declaracao previa.
-
-14
-Parametros de funcoes permitem receber valores externos.
+Correto! Funções podem existir sem parâmetros.
+Incorreto. Em C, funções podem ou não receber parâmetros.
+2002
+Uma função em C pode retornar no máximo um valor diretamente.
 1
-Correto! Parametros recebem dados enviados para a funcao.
-Incorreto! Parametros servem para entrada de dados.
-
-15
-A funcao main e o ponto de entrada de um programa em C.
-1
-Correto! main e a funcao inicial do programa.
-Incorreto! A execucao comeca na funcao main.
-
-16
-Funcoes em C podem retornar valores.
-1
-Correto! Funcoes podem retornar dados usando return.
-Incorreto! Funcoes podem retornar valores.
-
-17
-O tipo void indica ausencia de retorno.
-1
-Correto! void significa que a funcao nao retorna valor.
-Incorreto! void representa ausencia de retorno.
-
-18
-Uma funcao pode ser chamada antes de ser declarada sem prototipo em qualquer situacao.
+Correto! Uma função retorna apenas um valor diretamente pelo return.
+Incorreto. Em C, uma função retorna diretamente apenas um valor.
+2003
+A função main() é opcional em programas escritos em C.
 0
-Correto! O ideal e declarar prototipos antes do uso.
-Incorreto! Funcoes normalmente precisam de declaracao previa.
-
-19
-Parametros de funcoes permitem receber valores externos.
+Correto! A função main() é obrigatória em aplicações C.
+Incorreto. A execução de um programa C começa na função main().
+2004
+Uma função em C pode chamar outras funções.
 1
-Correto! Parametros recebem dados enviados para a funcao.
-Incorreto! Parametros servem para entrada de dados.
-
-20
-A funcao main e o ponto de entrada de um programa em C.
+Correto! Funções podem invocar quantas outras funções forem necessárias.
+Incorreto. Em C, funções podem chamar outras funções livremente.
+2005
+Uma definição de função pode estar embutida dentro de outra função em C.
+0
+Correto! C não permite definição de função dentro de outra função.
+Incorreto. Em C, definições de funções não podem ser aninhadas.
+2006
+A mesma função pode ser chamada de diferentes partes do programa.
 1
-Correto! main e a funcao inicial do programa.
-Incorreto! A execucao comeca na funcao main.
+Correto! Uma função pode ser reutilizada em diversos pontos do código.
+Incorreto. Funções podem ser chamadas em diferentes partes do programa.
+2007
+O protótipo de uma função corresponde à sua implementação completa.
+0
+Correto! O protótipo apenas declara assinatura e parâmetros.
+Incorreto. O protótipo não contém a implementação da função.
+2008
+A declaração de uma função normalmente termina com ponto e vírgula.
+1
+Correto! Protótipos de funções terminam com ';'.
+Incorreto. Declarações de funções em C terminam com ponto e vírgula.
+2009
+A definição de uma função inclui seu bloco de comandos.
+1
+Correto! A definição contém a implementação da função.
+Incorreto. A definição de função inclui o bloco de código executável.
+2010
+Uma função pode ser usada antes de sua definição sem necessidade de protótipo.
+0
+Correto! Sem protótipo, o compilador não conhece previamente a função.
+Incorreto. Para usar uma função antes da definição, é necessário declarar seu protótipo.

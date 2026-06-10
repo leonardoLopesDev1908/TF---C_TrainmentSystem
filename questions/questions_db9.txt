@@ -1,59 +1,56 @@
-91
-Ponteiros para funcoes podem armazenar enderecos de funcoes.
+10000
+Um ponteiro para função armazena o endereço de uma função compatível com sua assinatura.
 1
-Correto! Funcoes possuem enderecos de memoria.
-Incorreto! Ponteiros para funcoes armazenam enderecos de funcoes.
-
-92
-Ponteiros para funcoes permitem chamadas indiretas.
-1
-Correto! E possivel chamar funcoes atraves do ponteiro.
-Incorreto! Ponteiros para funcoes permitem execucao indireta.
-
-93
-Callbacks podem ser implementados usando ponteiros para funcoes.
-1
-Correto! Callbacks usam ponteiros para funcoes.
-Incorreto! Callbacks frequentemente usam ponteiros para funcoes.
-
-94
-Um ponteiro para funcao pode apontar para variaveis inteiras.
+Correto! Ponteiros para função armazenam endereços de funções com assinatura compatível.
+Incorreto. Um ponteiro para função referencia uma função por meio de seu endereço.
+10001
+Um ponteiro para função pode apontar para qualquer função, independentemente dos tipos de parâmetros e retorno.
 0
-Correto! Ponteiros para funcao devem apontar para funcoes compativeis.
-Incorreto! Ponteiros para funcao nao apontam para inteiros.
-
-95
-A biblioteca qsort() utiliza ponteiros para funcoes como comparadores.
+Correto! A compatibilidade entre assinaturas deve ser respeitada.
+Incorreto. O tipo do ponteiro para função deve ser compatível com a função apontada.
+10002
+Ponteiros para função permitem escolher dinamicamente qual função será executada.
 1
-Correto! qsort recebe uma funcao de comparacao.
-Incorreto! a funcao de fato recebe ponteiros para funcoes.
-
-96
-Em C, arrays são sempre passados para funções como ponteiros para o primeiro elemento.
-1
-Correto! Arrays decaem para ponteiros.
-Incorreto! Arrays são passados como ponteiros.
-
-97
-O operador [] em arrays é equivalente a uma operação de aritmética de ponteiros.
-1
-Correto! a[i] ≡ *(a + i).
-Incorreto! indexação usa aritmética de ponteiros.
-
-98
-Uma string literal em C é armazenada em memória somente leitura em muitos sistemas.
-1
-Correto! string literals são geralmente read-only.
-Incorreto! strings literais ficam em memória somente leitura.
-
-99
-É seguro modificar uma string literal diretamente em C.
+Correto! Essa é uma das principais aplicações dos ponteiros para função.
+Incorreto. Ponteiros para função permitem selecionar funções durante a execução do programa.
+10003
+Uma vez inicializado, um ponteiro para função não pode ser alterado para apontar para outra função.
 0
-Correto! string literal não deve ser modificada.
-Incorreto! modificar string literal causa comportamento indefinido.
-
-100
-sizeof em um array local retorna o tamanho total em bytes do array.
+Correto! O ponteiro pode ser redirecionado para outras funções compatíveis.
+Incorreto. Ponteiros para função podem ser alterados ao longo da execução.
+10004
+Vetores de ponteiros para função permitem armazenar referências para múltiplas funções.
 1
-Correto! sizeof funciona no array no escopo local.
-Incorreto! sizeof retorna o tamanho em bytes do array.
+Correto! Cada elemento do vetor pode apontar para uma função diferente.
+Incorreto. Vetores de ponteiros para função podem armazenar diversas funções compatíveis. 
+10005
+O uso de vetores de ponteiros para função pode simplificar a implementação de menus e despachantes de operações.
+1
+Correto! Essa é uma aplicação clássica dessa técnica.
+Incorreto. Vetores de ponteiros para função são frequentemente usados em menus e tabelas de despacho.
+10006
+Um typedef pode ser utilizado para tornar declarações de ponteiros para função mais legíveis.
+1
+Correto! Essa é uma prática comum em programas que utilizam ponteiros para função.
+Incorreto. typedef é frequentemente utilizado para simplificar a escrita desses tipos. 
+10007
+O uso de typedef altera o comportamento do ponteiro para função em tempo de execução.
+0
+Correto! typedef apenas cria um apelido para o tipo.
+Incorreto. typedef não altera o funcionamento do programa.
+10008
+Uma função pode receber como parâmetro um ponteiro para outra função.
+1
+Correto! Essa é uma técnica amplamente utilizada em programação genérica.
+Incorreto. Funções podem receber ponteiros para função como parâmetros. 
+10009
+Receber uma função como parâmetro impede que o mesmo algoritmo seja reutilizado para tarefas diferentes.
+0
+Correto! O objetivo é justamente aumentar a reutilização.
+Incorreto. O uso de ponteiros para função favorece a reutilização de algoritmos.
+10010
+Uma função de processamento de texto pode receber como parâmetro uma função responsável pela transformação de cada caractere.
+1
+Correto! Essa é uma aplicação típica de ponteiros para função.
+Incorreto. Funções podem receber algoritmos de transformação por meio de ponteiros para função. 
+

@@ -1,59 +1,55 @@
-51
-Bibliotecas estaticas sao incorporadas ao executavel.
+6000
+Bibliotecas são utilizadas durante a etapa de ligação (linking) do processo de compilação.
 1
-Correto! O codigo da biblioteca e incluido no binario final.
-Incorreto! Bibliotecas estaticas sao incorporadas ao executavel.
-
-52
-Bibliotecas dinamicas podem ser compartilhadas entre programas.
-1
-Correto! Bibliotecas dinamicas podem ser reutilizadas em memoria.
-Incorreto! Bibliotecas dinamicas podem ser compartilhadas.
-
-53
-Arquivos .so sao comuns em bibliotecas dinamicas no Linux.
-1
-Correto! .so representa shared objects.
-Incorreto! Bibliotecas compartilhadas usam .so.
-
-53
-Bibliotecas estaticas normalmente possuem extensao .a no Linux.
-1
-Correto! Bibliotecas estaticas usam extensao .a.
-Incorreto! .a e a extensao tipica de bibliotecas estaticas.
-
-55
-Bibliotecas dinamicas aumentam obrigatoriamente o tamanho do executavel final.
+Correto! Bibliotecas são integradas ao programa durante a etapa de ligação (linking).
+Incorreto. Bibliotecas são utilizadas principalmente durante a etapa de ligação do programa.
+6001
+A ligação de bibliotecas é sempre feita manualmente pelo programador.
 0
-Correto! O codigo pode ser carregado externamente.
-Incorreto! Bibliotecas dinamicas nao precisam ser incorporadas ao executavel.
-
-56
-Bibliotecas dinâmicas são carregadas em tempo de execução.
+Correto! Normalmente o compilador executa automaticamente o processo de ligação.
+Incorreto. A ligação costuma ser feita automaticamente pelo compilador.
+6002
+Existem duas formas principais de ligação de bibliotecas: estática e dinâmica.
 1
-Correto! Elas são carregadas quando o programa está rodando.
-Incorreto! Bibliotecas dinâmicas são carregadas em tempo de execução.
-
-57
-A função dlopen() é usada para carregar bibliotecas dinâmicas em alguns sistemas Unix-like.
+Correto! As duas formas clássicas são ligação estática e ligação dinâmica.
+Incorreto. Os dois modelos principais de ligação são estática e dinâmica.
+6003
+Na ligação estática, o executável final contém o código das bibliotecas utilizadas.
 1
-Correto! dlopen permite carregar bibliotecas em runtime.
-Incorreto! dlopen serve para abrir bibliotecas dinamicamente.
-
-58
-O linker estático resolve todas as dependências em tempo de compilação.
+Correto! O código das bibliotecas é incorporado ao executável final.
+Incorreto. Na ligação estática o código da biblioteca é incluído no executável.
+6004
+Na ligação dinâmica, o executável contém apenas referências às bibliotecas.
 1
-Correto! O linking estático acontece antes da execução.
-Incorreto! O linker estático resolve dependências na compilação.
-
-59
-Bibliotecas dinâmicas sempre precisam estar no mesmo diretório do executável.
+Correto! O executável referencia as bibliotecas, que são carregadas em tempo de execução.
+Incorreto. Na ligação dinâmica o executável não contém o código da biblioteca.
+6005
+Na ligação dinâmica, todas as bibliotecas são incorporadas diretamente no executável.
 0
-Correto! Elas podem estar em caminhos definidos pelo sistema.
-Incorreto! Bibliotecas dinâmicas podem estar em outros diretórios.
-
-60
-O comando ldd pode ser usado para verificar dependências de bibliotecas em um executável Linux.
+Correto! Isso ocorre apenas na ligação estática.
+Incorreto. Na ligação dinâmica apenas referências são mantidas no executável.
+6006
+Cada arquivo fonte em C normalmente gera um arquivo objeto separado durante a compilação.
 1
-Correto! ldd mostra bibliotecas dinâmicas necessárias.
-Incorreto! ldd exibe dependências de bibliotecas.
+Correto! Cada módulo compilado gera um arquivo objeto correspondente.
+Incorreto. Cada arquivo fonte gera um arquivo objeto durante a compilação.
+6007
+Arquivos objeto no Linux geralmente possuem extensão .o.
+1
+Correto! O sufixo padrão para código objeto é .o.
+Incorreto. Arquivos objeto normalmente possuem extensão .o.
+6008
+Arquivos objeto são gerados apenas após a etapa de ligação do programa.
+0
+Correto! Eles são gerados antes da ligação.
+Incorreto. Arquivos objeto são produzidos antes da etapa de linking.
+6009
+Bibliotecas podem ser vistas como coleções de módulos compilados.
+1
+Correto! Uma biblioteca agrupa vários módulos relacionados.
+Incorreto. Bibliotecas são coleções de módulos compilados.
+6010
+Todos os módulos de uma biblioteca são sempre incluídos no executável final.
+0
+Correto! Apenas os módulos realmente utilizados são incluídos.
+Incorreto. O ligador inclui apenas os módulos utilizados.

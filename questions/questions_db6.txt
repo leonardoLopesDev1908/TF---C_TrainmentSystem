@@ -1,59 +1,55 @@
-61
-O operador & pode ser usado para operacao AND bit a bit.
+7000
+Um bit é a menor unidade de informação utilizada em sistemas digitais.
 1
-Correto! & realiza AND entre bits.
-Incorreto! & e usado para operacao AND bit a bit.
-
-62
-O operador | realiza OR bit a bit.
-1
-Correto! | executa OR entre bits.
-Incorreto! | e usado para OR bit a bit.
-
-63
-O operador << desloca bits para a esquerda.
-1
-Correto! << move bits para a esquerda.
-Incorreto! << realiza deslocamento a esquerda.
-
-64
-O operador ~ inverte os bits de um numero.
-1
-Correto! ~ realiza complemento bit a bit.
-Incorreto! ~ inverte os bits.
-
-65
-Manipulacao de bits nao pode ser usada para otimizacao.
+Correto! O bit representa a menor unidade de informação em computação.
+Incorreto. O bit é considerado a menor unidade de informação digital.
+7001
+Um bit pode assumir qualquer valor inteiro entre 0 e 9.
 0
-Correto! Bitwise pode ajudar em otimizacoes.
-Incorreto! Operacoes bit a bit sao usadas em otimizacao.
-
-66
-O operador >> realiza deslocamento de bits para a direita.
+Correto! Um bit possui apenas dois estados possíveis.
+Incorreto. Um bit pode assumir apenas os valores 0 ou 1.
+7002
+Um byte é formado por 8 bits.
 1
-Correto! >> desloca os bits para a direita.
-Incorreto! >> faz deslocamento à direita.
-
-67
-Operadores bit a bit são frequentemente usados em sistemas embarcados.
+Correto! Um byte corresponde a um conjunto de 8 bits.
+Incorreto. Um byte é composto por 8 bits.
+7003
+A manipulação de bits permite controlar individualmente cada bit de uma variável.
 1
-Correto! Bitwise é comum em baixo nível.
-Incorreto! Bitwise é usado em sistemas embarcados.
-
-68
-O operador ^ representa XOR bit a bit.
-1
-Correto! ^ executa XOR entre bits.
-Incorreto! ^ é o operador XOR.
-
-69
-Operações bit a bit so funcionam com tipos float.
+Correto! Essa é uma das principais finalidades da manipulação de bits.
+Incorreto. A manipulação de bits permite acessar e modificar bits individualmente.
+7004
+Operações bit a bit atuam sobre grupos de bytes completos, sem considerar bits individuais.
 0
-Correto! Bitwise funciona com inteiros.
-Incorreto! Operações bit a bit não funcionam com float.
-
-70
-Mascaras de bits sao usadas para manipular bits especificos.
+Correto! Operações bit a bit trabalham diretamente sobre os bits.
+Incorreto. Operações bit a bit analisam e manipulam cada bit individualmente.
+7005
+A representação binária utiliza apenas os dígitos 0 e 1.
 1
-Correto! Mascaras isolam ou modificam bits.
-Incorreto! Mascaras de bits servem para manipulacao especifica.
+Correto! O sistema binário utiliza exclusivamente dois símbolos.
+Incorreto. O sistema binário utiliza apenas os dígitos 0 e 1.
+7006
+A representação hexadecimal utiliza dezesseis símbolos diferentes.
+1
+Correto! O sistema hexadecimal utiliza os símbolos 0–9 e A–F.
+Incorreto. O sistema hexadecimal possui dezesseis símbolos distintos.
+7007
+O sistema hexadecimal foi criado para substituir completamente o sistema binário.
+0
+Correto! O hexadecimal é apenas uma forma mais compacta de representar valores binários.
+Incorreto. O hexadecimal complementa o binário, não o substitui.
+7008
+Cada dígito hexadecimal representa exatamente 4 bits.
+1
+Correto! Um dígito hexadecimal corresponde a um grupo de 4 bits.
+Incorreto. Cada dígito hexadecimal representa 4 bits.
+7009
+Dois dígitos hexadecimais são suficientes para representar um byte.
+1
+Correto! Dois dígitos hexadecimais equivalem a 8 bits.
+Incorreto. Um byte pode ser representado por dois dígitos hexadecimais.
+7010
+A manipulação de bits costuma ser utilizada em sistemas embarcados e dispositivos de hardware.
+1
+Correto! Esse é um dos contextos mais comuns de utilização.
+Incorreto. Sistemas embarcados frequentemente utilizam manipulação de bits.

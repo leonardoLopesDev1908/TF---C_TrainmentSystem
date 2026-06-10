@@ -1,59 +1,55 @@
+1000
+C é uma linguagem de programação compilado.
 1
-A linguagem C e compilada antes da execucao do programa.
+Correto. O código-fonte em C precisa ser traduzido para código executável.
+Incorreto. C é uma linguagem compilada, não interpretada em seu modelo clássico.
+1001
+C é uma linguagem de propósito geral.
 1
-Correto! O codigo-fonte em C precisa ser compilado.
-Incorreto! C e uma linguagem compilada.
-
-2
-O tipo int e usado para armazenar numeros inteiros.
+Correto. Ela pode ser usada em diferentes tipos de software.
+Incorreto. C é amplamente tratada como uma linguagem de propósito geral.
+1002
+C é frequentemente associada à programação estruturada.
 1
-Correto! O tipo int representa numeros inteiros.
-Incorreto! int e utilizado para valores inteiros.
-
-3
-O tipo float armazena apenas numeros inteiros.
+Correto. Estruturas de seleção, repetição e funções fazem parte dessa abordagem.
+Incorreto. C é tradicionalmente ensinada como linguagem estruturada.
+1003
+C é uma linguagem declarativa pura.
 0
-Correto! float armazena numeros com casas decimais.
-Incorreto! float e usado para numeros reais.
-
-4
-O operador % calcula o resto da divisao inteira.
+Correto. C é normalmente classificada como imperativa e procedural.
+Incorreto. C não é uma linguagem declarativa pura.
+1004
+C é uma linguagem imperativa.
 1
-Correto! O operador % retorna o resto da divisao.
-Incorreto! % e usado para obter o resto da divisao inteira.
-
-5
-Em C, comentarios de uma linha comecam com //.
+Correto. O programa é descrito como uma sequência de comandos e alterações de estado.
+Incorreto. C é tipicamente classificada como imperativa.
+1005
+C é uma linguagem procedural.
 1
-Correto! // inicia comentarios de uma linha.
-Incorreto! Comentarios de uma linha usam //.
-
-6
-O operador == e usado para comparar dois valores.
+Correto. A organização em funções é um dos traços centrais dessa abordagem.
+Incorreto. C é tradicionalmente classificada como procedural.
+1006
+C foi criada por Dennis Ritchie.
 1
-Correto! == verifica se dois valores sao iguais.
-Incorreto! == e o operador de comparacao.
-
-7
-A funcao printf e utilizada para receber dados do usuario.
+Correto. Esse é um fato histórico amplamente conhecido.
+Incorreto. A criação de C é atribuída a Dennis Ritchie.
+1007
+C surgiu após a década de 1990.
 0
-Correto! printf serve para exibir dados na tela.
-Incorreto! Quem recebe dados do usuario e normalmente o scanf.
-
-8
-Um array em C armazena varios valores do mesmo tipo.
+Correto. A linguagem é bem anterior a esse período.
+Incorreto. C surgiu na década de 1970.
+1008
+C teve papel importante na reescrita do Unix em linguagem de alto nível.
 1
-Correto! Arrays armazenam elementos do mesmo tipo.
-Incorreto! Arrays guardam varios valores do mesmo tipo.
-
-9
-A funcao main e o ponto de entrada de um programa em C.
-1
-Correto! A execucao do programa inicia na main.
-Incorreto! Todo programa em C comeca pela funcao main.
-
-10
-O operador && representa o OU logico.
+Correto. Esse é um dos marcos históricos associados à linguagem.
+Incorreto. C teve participação relevante na história do Unix.
+1009
+C é usada apenas para programas acadêmicos simples.
 0
-Correto! && representa o E logico.
-Incorreto! O operador OU logico e ||.
+Correto. C também é usada em aplicações, utilitários, sistemas e embarcados.
+Incorreto. O uso de C vai muito além de exemplos didáticos.
+1010
+C é amplamente utilizada no desenvolvimento de sistemas operacionais.
+1
+Correto. Esse é um dos contextos clássicos de uso da linguagem.
+Incorreto. C tem forte presença no desenvolvimento de sistemas operacionais.
