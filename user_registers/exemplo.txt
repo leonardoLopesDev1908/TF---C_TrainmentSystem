@@ -1,3 +1,4 @@
+052be272185f372a70c4...   //Senha criptografada
 Wed May 27 20:19:28 2026  //Date
 20600                     //Date in day format
 1                         //Sessoes totais

@@ -10,3 +10,33 @@ Leonardo (Wed May 27 20:19:28 2026
 ): 9.50
 Leonardo (Thu May 28 14:29:22 2026
 ): 90.00
+Leonardo (Fri May 29 16:22:23 2026
+): 85.00
+Leonardo (Fri May 29 16:29:08 2026
+): 100.00
+Leonardo (Fri May 29 16:38:32 2026
+): 95.00
+Henrique (Fri May 29 19:22:07 2026
+): 25.00
+leonardo (Tue Jun  9 16:32:58 2026
+): 55.00
+leonardo (Tue Jun  9 16:38:23 2026
+): 90.00
+Carlos (Tue Jun  9 16:48:51 2026
+): 100.00
+lucas (Tue Jun  9 16:52:10 2026
+): 9.50
+Leonardo (Tue Jun  9 16:54:32 2026
+): 9.50
+Leonardo (Tue Jun  9 19:35:54 2026
+): 9.00
+Leonardo (Tue Jun  9 20:09:47 2026
+): 20.00
+Leonardo (Tue Jun  9 20:11:21 2026
+): 7.69
+Leonardo (Tue Jun  9 20:14:27 2026
+): 8.33
+Leonardo (Wed Jun 10 17:07:23 2026
+): 7.41
+Leonardo (Tue Jun 23 08:57:42 2026
+): 7.41
